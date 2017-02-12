@@ -2,7 +2,7 @@
   PrintTimes.ino - Library for calculating sunrise and sunset times based on current local time and position on Earth.
   Calculations are based on Sunrise equation: https://en.wikipedia.org/wiki/Sunrise_equation
   Input and output times are in Unix Timestamp format (seconds since Jan 1, 1970, 00:00:00).
-  
+
   Copyright (C) 2017  Nejc Planinsek
 
   This program is free software: you can redistribute it and/or modify
@@ -21,18 +21,19 @@
 
 #include <Sun.h>
 
-const unsigned long tm = 1486662812;
-
 void setup() {
   Serial.begin(9600);
   delay(100);
-  
+
   Sun sun(46.24, 15.27);
-  
+
+  unsigned long tm = 1486908295;
+  Serial.print("Current time: "); Serial.println(tm);
+
   unsigned long rise = sun.getRise(tm);
   Serial.print("Sun rises at: "); Serial.println(rise);
 
-  unsigned long set = sun.getRise(tm);
+  unsigned long set = sun.getSet(tm);
   Serial.print("Sun sets at: "); Serial.println(set);
 
   unsigned long day = sun.getDayLength(tm);
