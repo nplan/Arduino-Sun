@@ -1,0 +1,7 @@
+Sun	KEYWORD1
+getRise	KEYWORD2
+getSet	KEYWORD2
+getRiseSet	KEYWORD2
+getgetDayLength	KEYWORD2
+getNightLength	KEYWORD2
+
