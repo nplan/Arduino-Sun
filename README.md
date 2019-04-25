@@ -1,7 +1,7 @@
 # Arduino-Sun
 Arduino library for calculating sunrise and sunset times.
 
-Calculations are done using [the sunrise equation](https://guides.github.com/features/mastering-markdown/).
+Calculations are done using [the sunrise equation](https://en.wikipedia.org/wiki/Sunrise_equation).
 
 The library takes current time in [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) format and returns sunrise and sunset times for the ongoing day in the same format.
 
